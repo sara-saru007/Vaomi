@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaomi.ai Case Study | Scaling Clean Water Tech</title>
+    
+    <!-- Google Fonts: Manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        obsidian: '#000000',
+                        charcoal: '#0f0f0f',
+                        emerald: {
+                            DEFAULT: '#34d399', // emerald-400
+                            400: '#34d399',
+                            500: '#10b981',
+                            900: '#064e3b',
+                            glow: 'rgba(52, 211, 153, 0.15)'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Manrope', 'sans-serif'],
+                        serif: ['Manrope', 'sans-serif'],
+                    },
+                    backgroundImage: {
+                        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #34d399;
+        }
+
+        /* Reveal Animation Classes */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 1s cubic-bezier(0.5, 0, 0, 1);
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+
+        /* Card Hover Effects */
+        .cohort-card {
+            transition: all 0.4s ease;
+        }
+        .cohort-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px -5px rgba(52, 211, 153, 0.1);
+            border-color: rgba(52, 211, 153, 0.3);
+        }
+    </style>
+</head>
+<body class="bg-obsidian text-white selection:bg-emerald-500/30 selection:text-emerald-200">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-obsidian/90 backdrop-blur-xl border-b border-white/5 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="/" class="flex items-center gap-3 hover:opacity-90 transition-opacity">
+                    <img src="https://framerusercontent.com/images/ETPGt55zejeZ8H4qrHRuhKy61Q.jpeg?width=200&height=200" alt="Vaomi Logo" class="w-10 h-10 rounded-full object-contain">
+                    <span class="text-2xl font-medium tracking-tight text-white">Vaomi<span class="text-emerald-400">.</span>ai</span>
+                </a>
+                <div class="hidden md:flex items-center space-x-10">
+                    <a href="#story" class="text-xs font-semibold text-zinc-400 hover:text-emerald-400 transition-colors uppercase tracking-[0.2em]">The Story</a>
+                    
+                    <a href="#cohorts" class="text-xs font-semibold text-zinc-400 hover:text-emerald-400 transition-colors uppercase tracking-[0.2em]">The Cohorts</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+          <!-- Background Image with Overlay -->
+       <div class="absolute inset-0 z-0">
+    <div class="absolute inset-0 bg-[url('https://www.racoman.com/hubfs/Imported_Blog_Media/1K4A1GL1brKbEFgzp8E0wNWbZYFUM6zo00ODilRYxQ8ZASqE-out-0.png')] bg-cover bg-center opacity-80 mix-blend-luminosity scale-105 animate-[pulse_10s_ease-in-out_infinite]"></div>
+    
+    <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/80 to-obsidian/30"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-obsidian via-transparent to-obsidian"></div>
+</div>
+
+        <!-- Background Elements -->
+        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1518112166137-55ef6a47a30f?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center opacity-20"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/80 to-transparent"></div>
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-[100px] animate-pulse"></div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 text-center">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-900/10 mb-8 reveal">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="text-xs font-medium text-emerald-400 tracking-widest uppercase">Case Study</span>
+            </div>
+            
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-8 leading-tight reveal delay-100">
+                Backing the Missing <br />
+                <span class="bg-gradient-to-r from-emerald-400 to-emerald-600 bg-clip-text text-transparent"> Infrastructure for Water Tech</span>
+            </h1>
+            
+            <p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto leading-relaxed reveal delay-200">
+                A modular wastewater solution unlocked the capital, supply chain, and execution muscle needed to go live, at scale.
+            </p>
+
+            
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section id="story" class="py-24 md:py-32 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <!-- Text Content -->
+                <div class="reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8">Turning Crisis into <span class="text-emerald-400">Opportunity</span></h2>
+                    
+                    <div class="space-y-6 text-zinc-400 leading-relaxed text-lg">
+                        <p>
+                            A deep-tech founder stood at the crossroads of two converging global pressures: rising water scarcity and growing industrial waste. Their breakthrough system could turn toxic, high-salinity wastewater into usable fresh water at a fraction of today’s costs.
+                        </p>
+                        
+                        <p class="pl-4 border-l-2 border-emerald-500/50 italic text-white/90">
+                            But the chasm between proven tech and real-world deployment was enormous. Industrial buyers moved slowly. Procurement was labyrinthine. Capital needs ballooned beyond traditional venture appetite. And entering global water markets required geopolitically savvy allies, not just funding.
+                        </p>
+                        <p>
+                            That's where <strong class="text-white">Vaomi</strong> stepped in to build what was missing: the ecosystem. We connected the founder to infrastructure investors, industrial operators, and Middle Eastern market architects ready to accelerate deployment and unlock scale.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Image/Visual -->
+                <div class="relative reveal delay-200">
+                    <div class="absolute inset-0 bg-gradient-to-tr from-emerald-500/20 to-transparent rounded-2xl transform rotate-3 scale-105"></div>
+                    <img src="https://media.licdn.com/dms/image/v2/C5612AQFhCiF2yKH65A/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1645358577390?e=2147483647&v=beta&t=P4B_2nMvJcAMC-ZDMYZpGZ35Yisn4MVQTipK2hBQ-dQ" alt="Industrial Water Treatment" class="relative rounded-2xl shadow-2xl border border-white/10 grayscale hover:grayscale-0 transition-all duration-700 w-full object-cover h-[580px]">
+                    
+                    <!-- Floating Stat Card -->
+                    <div class="absolute -bottom-6 -left-6 bg-charcoal border border-white/10 p-6 rounded-xl shadow-xl backdrop-blur-md max-w-xs">
+                        <div class="flex items-center gap-3 mb-2">
+                            <div class="p-2 bg-emerald-500/10 rounded-lg">
+                                <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            </div>
+                            <span class="text-sm font-bold text-white uppercase tracking-wider">Impact Unlocked</span>
+                        </div>
+                        <p class="text-2xl font-bold text-white">80% Energy</p>
+                        <p class="text-sm text-zinc-500">Recycled</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Playbook Section -->
+    <section id="playbook" class="py-24 bg-zinc-900/30 border-y border-white/5">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Precision Playbook</h2>
+                <p class="text-zinc-400">How we transformed proven water tech into a scale-ready business</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="group p-8 rounded-2xl bg-charcoal border border-white/5 hover:border-emerald-500/30 transition-all duration-300 reveal delay-100">
+                    <div class="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Insight</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        We reframed the story from “clean water” to risk removal, compliance and cost advantage, opening doors to bigger industrial markets.
+                    </p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="group p-8 rounded-2xl bg-charcoal border border-white/5 hover:border-emerald-500/30 transition-all duration-300 reveal delay-200">
+                    <div class="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 7m0 13V7"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Intelligence</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        Vaomi identified investors and funds built for CapEx-heavy hardware, filtering out misaligned capital and shortcutting months of outreach.
+                    </p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="group p-8 rounded-2xl bg-charcoal border border-white/5 hover:border-emerald-500/30 transition-all duration-300 reveal delay-300">
+                    <div class="w-12 h-12 rounded-full bg-emerald-500/10 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3 text-white">Acceleration</h3>
+                    <p class="text-zinc-400 text-sm leading-relaxed">
+                        We assembled the right ecosystem - operators, scale-up partners, and regional channels, so the technology could move from pilots into deployment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-obsidian text-white py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
+            <div class="mb-6 md:mb-0 flex items-center gap-2">
+                <img src="https://framerusercontent.com/images/ETPGt55zejeZ8H4qrHRuhKy61Q.jpeg?width=200&height=200" alt="Vaomi Logo" class="w-10 h-10 rounded-full object-contain">
+                <span class="text-2xl font-bold font-serif text-white tracking-wide">Vaomi<span class="text-emerald-400">.</span>ai</span>
+            </div>
+            <div class="text-sm text-gray-500">
+                &copy; 2025 Vaomi. All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-obsidian/95', 'shadow-lg');
+                navbar.classList.remove('bg-obsidian/90', 'border-white/5');
+            } else {
+                navbar.classList.remove('bg-obsidian/95', 'shadow-lg');
+                navbar.classList.add('bg-obsidian/90', 'border-white/5');
+            }
+        });
+
+        // Intersection Observer for Reveal Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vaomi.ai - Global EV Expansion Case Study</title>
+    
+    <!-- Meta Tags for Social Preview -->
+    <meta name="description" content="Turning a promising Indian startup into a globally-networked EV company." />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Vaomi.ai - Global EV Expansion Case Study" />
+    <meta property="og:description" content="Turning a promising Indian startup into a globally-networked EV company." />
+    <meta property="og:image" content="https://vaomiaiv4.s3.us-east-1.amazonaws.com/preview.webp" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Vaomi.ai - Global EV Expansion Case Study" />
+    <meta property="twitter:description" content="Turning a promising Indian startup into a globally-networked EV company." />
+    <meta property="twitter:image" content="https://vaomiaiv4.s3.us-east-1.amazonaws.com/preview.webp" />
+
+    <!-- Schema.org -->
+    <meta itemprop="image" content="https://vaomiaiv4.s3.us-east-1.amazonaws.com/preview.webp" />
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #000000;
+            color: #ffffff;
+            overflow-x: hidden;
+            font-weight: 300;
+        }
+        
+        strong, b {
+            font-weight: 600;
+        }
+        
+        ::selection {
+            background-color: rgba(34, 197, 94, 0.3);
+            color: #bbf7d0;
+        }
+
+        /* Reveal Animation Classes */
+        .reveal-element {
+            opacity: 0;
+            transform: translateY(3rem);
+            filter: blur(4px);
+            transition: all 1s cubic-bezier(0.17, 0.55, 0.55, 1);
+        }
+        
+        .reveal-element.visible {
+            opacity: 1;
+            transform: translateY(0);
+            filter: none;
+        }
+
+        /* Delay Utilities */
+        .delay-0 { transition-delay: 0ms; }
+        .delay-100 { transition-delay: 100ms; }
+        .delay-200 { transition-delay: 200ms; }
+        .delay-300 { transition-delay: 300ms; }
+        .delay-400 { transition-delay: 400ms; }
+    </style>
+</head>
+<body class="bg-black text-white min-h-screen flex flex-col">
+
+    <!-- NAVIGATION -->
+    <nav id="navbar" class="fixed top-0 w-full z-50 transition-all duration-500 py-6">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="https://vaomi.ai/" class="flex items-center gap-3 group cursor-pointer hover:opacity-80 transition-opacity">
+                <img src="https://framerusercontent.com/images/ETPGt55zejeZ8H4qrHRuhKy61Q.jpeg?width=200&height=200" alt="Vaomi.ai Logo" class="w-10 h-10 rounded-full">
+                <span class="text-2xl font-medium tracking-tight text-white">Vaomi<span class="text-green-400">.</span>ai</span>
+            </a>
+            
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
+                <button data-scroll-to="the-challenge" class="scroll-btn hover:text-green-400 transition-colors uppercase tracking-widest text-xs">The Challenge</button>
+                <button data-scroll-to="the-playbook" class="scroll-btn hover:text-green-400 transition-colors uppercase tracking-widest text-xs">Playbook</button>
+                <button data-scroll-to="the-cohorts" class="scroll-btn hover:text-green-400 transition-colors uppercase tracking-widest text-xs">The Cohorts</button>
+                <button data-scroll-to="the-network" class="scroll-btn hover:text-green-400 transition-colors uppercase tracking-widest text-xs">Network</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[90vh] flex items-center justify-center pt-20 overflow-hidden">
+        <!-- Ambient Background -->
+        <div class="absolute inset-0 pointer-events-none">
+            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-green-500/10 rounded-full blur-[120px]"></div>
+            <div class="absolute top-0 left-0 w-full h-full bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-[0.04] mix-blend-overlay"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative z-10 text-center reveal-wrapper">
+            <div class="reveal-element">
+                <div class="inline-block mb-6">
+                    <div class="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-xs font-semibold text-white tracking-widest uppercase">
+                        CASE STUDY
+                    </div>
+                </div>
+                
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tighter text-white mb-8 leading-[0.95]">
+                    Fueling EV Scale Across <br />
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-emerald-400 to-teal-400">
+                        Emerging Mobility Markets
+                    </span>
+                </h1>
+                
+                <p class="text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-12 leading-relaxed font-light">
+                    Turning a promising Indian startup into a <br />
+                    <span class="text-white font-normal">globally-networked EV company.</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE CHALLENGE -->
+    <section id="the-challenge" class="py-32 relative border-t border-zinc-900 bg-zinc-950/30">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="reveal-element">
+                    <h2 class="text-4xl md:text-6xl font-medium text-white mb-8 leading-tight">
+                        Breaking <br>
+                        Through the <br>
+                        <span class="text-zinc-600">Hardware Ceiling.</span>
+                    </h2>
+                    <div class="space-y-6 text-zinc-400 text-lg leading-relaxed font-light">
+                        <p>
+                            A visionary founder had conquered India with a game-changing modular EV (70% faster assembly, 40% lower CapEx). But their ambition was global: <strong>Markets across Asia, Africa, and Latin America.</strong>
+                        </p>
+                        <p>
+                            However, the path to global scale hit a brutal reality. They didn't just need capital; they needed operational DNA to navigate regulatory frameworks and build manufacturing P&Ls.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="reveal-element delay-200">
+                    <div class="relative rounded-2xl overflow-hidden border border-zinc-800 group h-full max-h-[600px]">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-40 z-10"></div>
+                        <img 
+                            src="https://img.freepik.com/premium-vector/green-scooter-semi-flat-rgb-color-vector-illustration-classic-electric-bike-italian-road-trip-urban-moped-riding-delivery-transport-isolated-cartoon-object-white-background_106317-6746.jpg" 
+                            alt="Electric Motorbike" 
+                            class="w-full h-full object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRECISION PLAYBOOK -->
+    <section id="the-playbook" class="py-32 bg-black border-y border-white/5">
+        <div class="container mx-auto px-6">
+            <div class="reveal-element">
+                <div class="text-center mb-20">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border text-[10px] font-bold uppercase tracking-widest bg-green-500/10 text-green-400 border-green-500/20">Methodology</span>
+                    <h2 class="text-4xl md:text-5xl font-medium text-white mt-6 mb-4">Precision Playbook</h2>
+                    <p class="text-zinc-500 max-w-2xl mx-auto font-light">
+                        From Technology to Territory. We didn't hand over a spreadsheet; we engineered an ecosystem.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Deep Listening -->
+                <div class="reveal-element delay-100">
+                    <div class="h-full bg-zinc-900/30 border border-zinc-800 p-10 rounded-[2rem] relative overflow-hidden group hover:border-green-500/30 transition-colors duration-500 flex flex-col justify-start text-left">
+                        <div class="w-12 h-12 rounded-xl bg-black border border-zinc-800 flex items-center justify-center text-white mb-8 group-hover:text-green-400 transition-colors shrink-0">
+                            <i data-lucide="ear" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-medium text-white mb-4 leading-tight">Deep Listening</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed font-light">
+                            We unpacked the technology—modular battery-swappable architecture, 70% faster assembly—and the vision: democratizing electric mobility for the next billion riders.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- AI Analysis -->
+                <div class="reveal-element delay-200">
+                    <div class="h-full bg-zinc-900/30 border border-zinc-800 p-10 rounded-[2rem] relative overflow-hidden group hover:border-green-500/30 transition-colors duration-500 flex flex-col justify-start text-left">
+                        <div class="w-12 h-12 rounded-xl bg-black border border-zinc-800 flex items-center justify-center text-white mb-8 group-hover:text-green-400 transition-colors shrink-0">
+                            <i data-lucide="cpu" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-medium text-white mb-4 leading-tight">AI Analysis</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed font-light">
+                            Vaomi's AI engine mapped the EV investment landscape, analyzing funding patterns and investor theses. We cross-referenced this with operators who've scaled manufacturing in Asia.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Intelligent Cohorts -->
+                <div class="reveal-element delay-300">
+                    <div class="h-full bg-zinc-900/30 border border-zinc-800 p-10 rounded-[2rem] relative overflow-hidden group hover:border-green-500/30 transition-colors duration-500 flex flex-col justify-start text-left">
+                        <div class="w-12 h-12 rounded-xl bg-black border border-zinc-800 flex items-center justify-center text-white mb-8 group-hover:text-green-400 transition-colors shrink-0">
+                            <i data-lucide="users" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-2xl font-medium text-white mb-4 leading-tight">Intelligent Cohorts</h3>
+                        <p class="text-zinc-400 text-sm leading-relaxed font-light">
+                            High-conviction connections chosen not for vanity but for velocity. Each introduction was engineered with context on why it mattered and how it unlocked the next milestone.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE COHORTS -->
+    <section id="the-cohorts" class="py-32 bg-black relative">
+        <div class="container mx-auto px-6">
+            <div class="reveal-element">
+                <div class="text-center mb-20">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border text-[10px] font-bold uppercase tracking-widest bg-blue-500/10 text-blue-400 border-blue-500/20">The Ecosystem</span>
+                    <h2 class="text-4xl md:text-5xl font-medium text-white mt-6 mb-4">Cohorts That Catalyzed Momentum</h2>
+                    <p class="text-zinc-500 max-w-2xl mx-auto font-light">
+                        We didn't just connect investors; we built a coalition of believers to accelerate market entry.
+                    </p>
+                </div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Cohorts List -->
+                <div class="reveal-element delay-0">
+                    <div class="p-8 border border-zinc-800 bg-zinc-900/20 rounded-2xl h-full hover:border-zinc-700 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="bg-green-500/10 p-3 rounded-lg text-green-400"><i data-lucide="zap" class="w-5 h-5"></i></div>
+                            <h3 class="text-lg font-bold text-white">Global EV Operators</h3>
+                        </div>
+                        <p class="text-zinc-400 text-sm leading-relaxed font-light">Battle-tested executives from North America and LATAM bringing manufacturing discipline and hard-won lessons from prototype to production.</p>
+                    </div>
+                </div>
+                <div class="reveal-element delay-100">
+                    <div class="p-8 border border-zinc-800 bg-zinc-900/20 rounded-2xl h-full hover:border-zinc-700 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="bg-blue-500/10 p-3 rounded-lg text-blue-400"><i data-lucide="trending-up" class="w-5 h-5"></i></div>
+                            <h3 class="text-lg font-bold text-white">Climate-Tech VCs</h3>
+                        </div>
+                        <p class="text-zinc-400 text-sm leading-relaxed font-light">India's leading climate funds managing $50M-$550M+ AUM with deep expertise in e-mobility, battery technology, and capital-efficient scaling.</p>
+                    </div>
+                </div>
+                <div class="reveal-element delay-200">
+                    <div class="p-8 border border-zinc-800 bg-zinc-900/20 rounded-2xl h-full hover:border-zinc-700 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="bg-purple-500/10 p-3 rounded-lg text-purple-400"><i data-lucide="briefcase" class="w-5 h-5"></i></div>
+                            <h3 class="text-lg font-bold text-white">Strategic Corporate Investors</h3>
+                        </div>
+                        <p class="text-zinc-400 text-sm leading-relaxed font-light">Senior executives from ride-hailing platforms, logistics companies, and industrial conglomerates exploring EV fleet partnerships.</p>
+                    </div>
+                </div>
+                <div class="reveal-element delay-300">
+                    <div class="p-8 border border-zinc-800 bg-zinc-900/20 rounded-2xl h-full hover:border-zinc-700 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="bg-orange-500/10 p-3 rounded-lg text-orange-400"><i data-lucide="map" class="w-5 h-5"></i></div>
+                            <h3 class="text-lg font-bold text-white">Expansion Architects</h3>
+                        </div>
+                        <p class="text-zinc-400 text-sm leading-relaxed font-light">Operators with deep Africa, LATAM, and SEA networks who understand regulatory nuances and partnership models for capital-light expansion.</p>
+                    </div>
+                </div>
+                <div class="reveal-element delay-400">
+                    <div class="p-8 border border-zinc-800 bg-zinc-900/20 rounded-2xl h-full hover:border-zinc-700 transition-colors">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="bg-teal-500/10 p-3 rounded-lg text-teal-400"><i data-lucide="settings" class="w-5 h-5"></i></div>
+                            <h3 class="text-lg font-bold text-white">Technical Advisors</h3>
+                        </div>
+                        <p class="text-zinc-400 text-sm leading-relaxed font-light">Engineers and product leaders from established EV companies who pressure-tested the technology and refined manufacturing processes.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RIPPLE EFFECT -->
+    <section class="py-40 bg-black relative border-y border-zinc-900 overflow-hidden">
+        <!-- Background decorative blur -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-green-500/5 rounded-full blur-[100px] pointer-events-none"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="reveal-element text-center max-w-4xl mx-auto">
+                <h2 class="text-5xl md:text-6xl font-medium text-white mb-8">The Ripple Effect</h2>
+                <p class="text-zinc-400 text-lg leading-relaxed font-light mb-16 max-w-3xl mx-auto">
+                    That initial network snowballed. The founder didn't just get connections—they got a force multiplier. What started as an Indian innovation story is becoming a global mobility revolution.
+                </p>
+
+                <!-- 4 Cards Row -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Card 1 -->
+                    <div class="group relative bg-zinc-900/20 border border-zinc-800 rounded-3xl p-8 hover:bg-zinc-900/40 hover:border-green-500/30 transition-all duration-500 flex flex-col items-center text-center hover:-translate-y-1">
+                        <div class="mb-6 p-4 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-500 group-hover:text-green-400 group-hover:border-green-500/20 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-black/50">
+                            <i data-lucide="globe" class="w-8 h-8 stroke-[1.5]"></i>
+                        </div>
+                        <h3 class="text-lg font-medium text-white leading-tight mb-2">African Markets<br><span class="text-zinc-500 group-hover:text-zinc-400 transition-colors">Unlocked</span></h3>
+                    </div>
+                    
+                    <!-- Card 2 -->
+                    <div class="group relative bg-zinc-900/20 border border-zinc-800 rounded-3xl p-8 hover:bg-zinc-900/40 hover:border-blue-500/30 transition-all duration-500 flex flex-col items-center text-center hover:-translate-y-1">
+                        <div class="mb-6 p-4 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-500 group-hover:text-blue-400 group-hover:border-blue-500/20 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-black/50">
+                            <i data-lucide="zap" class="w-8 h-8 stroke-[1.5]"></i>
+                        </div>
+                        <h3 class="text-lg font-medium text-white leading-tight mb-2">LATAM Clean Energy<br><span class="text-zinc-500 group-hover:text-zinc-400 transition-colors">Partnerships</span></h3>
+                    </div>
+                    
+                    <!-- Card 3 -->
+                    <div class="group relative bg-zinc-900/20 border border-zinc-800 rounded-3xl p-8 hover:bg-zinc-900/40 hover:border-purple-500/30 transition-all duration-500 flex flex-col items-center text-center hover:-translate-y-1">
+                        <div class="mb-6 p-4 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-500 group-hover:text-purple-400 group-hover:border-purple-500/20 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-black/50">
+                            <i data-lucide="users" class="w-8 h-8 stroke-[1.5]"></i>
+                        </div>
+                        <h3 class="text-lg font-medium text-white leading-tight mb-2">40+ VC Connections<br><span class="text-zinc-500 group-hover:text-zinc-400 transition-colors">in India</span></h3>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="group relative bg-zinc-900/20 border border-zinc-800 rounded-3xl p-8 hover:bg-zinc-900/40 hover:border-orange-500/30 transition-all duration-500 flex flex-col items-center text-center hover:-translate-y-1">
+                        <div class="mb-6 p-4 rounded-full bg-zinc-900 border border-zinc-800 text-zinc-500 group-hover:text-orange-400 group-hover:border-orange-500/20 group-hover:scale-110 transition-all duration-500 shadow-lg shadow-black/50">
+                            <i data-lucide="sliders-horizontal" class="w-8 h-8 stroke-[1.5]"></i>
+                        </div>
+                        <h3 class="text-lg font-medium text-white leading-tight mb-2">Business Model<br><span class="text-zinc-500 group-hover:text-zinc-400 transition-colors">Refinement</span></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CAPITAL INTELLIGENCE NETWORK -->
+    <section id="the-network" class="py-32 bg-black relative">
+        <div class="container mx-auto px-6">
+            <div class="reveal-element">
+                <div class="mb-24">
+                    <h2 class="text-4xl md:text-5xl font-medium text-white max-w-xl">
+                        Capital Intelligence <br /> <span class="text-green-400">Network</span>
+                    </h2>
+                </div>
+            </div>
+
+            <!-- SECTION 1: THE CAPITAL COALITION -->
+            <div class="mb-24">
+                <div class="reveal-element">
+                    <div class="mb-8 pb-4 border-b border-white/10">
+                        <h3 class="text-2xl font-bold text-white">Investors Who Showed Conviction</h3>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Simmi Sareen (Unitus Capital) -->
+                    <div class="reveal-element delay-0">
+                        <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                            <a href="https://in.linkedin.com/in/simmi-sareen" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-blue-400 transition-colors absolute top-6 right-6">
+                                <i data-lucide="linkedin" class="w-6 h-6 stroke-[1.5]"></i>
+                            </a>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex gap-4 items-center pr-12">
+                                    <div class="w-16 h-16 rounded-full overflow-hidden border border-zinc-700 group-hover:border-zinc-500 transition-colors shrink-0">
+                                        <img src="https://images.crunchbase.com/image/upload/c_thumb,h_170,w_170,f_auto,g_face,z_0.7,b_white,q_auto:eco,dpr_2/fbesujxcxdhqd4l4ip6j?ik-sanitizeSvg=true" alt="Simmi Sareen" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-lg leading-tight">Simmi<br>Sareen</h4>
+                                        <p class="text-zinc-500 text-xs mt-1 font-medium leading-tight">Co-Founder, Unitus<br>Capital</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5"><span class="inline-block px-2 py-1 bg-green-900/20 text-green-400 border border-green-900/40 rounded text-[10px] font-bold tracking-wide uppercase">$4B+ Capital Mobilized</span></div>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow font-light">Premier impact investment bank. Key mobility deals include <strong>GreenCell Mobility</strong> ($20M), <strong>Euler Motors</strong>, and <strong>Yulu</strong>.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Climate Finance</span>
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Impact Banking</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shantanu C. (Transition VC) -->
+                    <div class="reveal-element delay-100">
+                         <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                            <a href="https://in.linkedin.com/in/shantanu-chaturvedi-vc" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-blue-400 transition-colors absolute top-6 right-6">
+                                <i data-lucide="linkedin" class="w-6 h-6 stroke-[1.5]"></i>
+                            </a>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex gap-4 items-center pr-12">
+                                    <div class="w-16 h-16 rounded-full overflow-hidden border border-zinc-700 group-hover:border-zinc-500 transition-colors shrink-0">
+                                        <img src="https://media.licdn.com/dms/image/v2/D5603AQGeZNqBrUL-vQ/profile-displayphoto-shrink_400_400/B56ZPugGdvHIAk-/0/1734873213969?e=1766016000&v=beta&t=dakXgVHJ_USME2FWvVbY3updrFT5l15xlK6bXR13uo4" alt="Shantanu C." class="w-full h-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-lg leading-tight">Shantanu<br>Chaturvedi</h4>
+                                        <p class="text-zinc-500 text-xs mt-1 font-medium leading-tight">Partner, Transition<br>VC</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5"><span class="inline-block px-2 py-1 bg-green-900/20 text-green-400 border border-green-900/40 rounded text-[10px] font-bold tracking-wide uppercase">~$48M Energy Fund</span></div>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow font-light">India's first energy transition fund. Portfolio includes <strong>EMO Energy</strong> (battery tech) and <strong>Green Tiger</strong> (powertrain conversion).</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Deep Tech</span>
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Decarbonization</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Prajakt Raut (Caret Capital) -->
+                     <div class="reveal-element delay-200">
+                        <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                            <a href="https://in.linkedin.com/in/prajaktraut" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-blue-400 transition-colors absolute top-6 right-6">
+                                <i data-lucide="linkedin" class="w-6 h-6 stroke-[1.5]"></i>
+                            </a>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex gap-4 items-center pr-12">
+                                    <div class="w-16 h-16 rounded-full overflow-hidden border border-zinc-700 group-hover:border-zinc-500 transition-colors shrink-0">
+                                        <img src="https://media.licdn.com/dms/image/v2/D5603AQGQ23j0HzBV3g/profile-displayphoto-scale_400_400/B56Zl7IvcAI8Ag-/0/1758707513995?e=1766016000&v=beta&t=cN8p26VUfF9hCdvag5bSlTVO-tRq47zB5JHclDW2Tk4" alt="Prajakt Raut" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-lg leading-tight">Prajakt<br>Raut</h4>
+                                        <p class="text-zinc-500 text-xs mt-1 font-medium leading-tight">Managing Partner,<br>Caret Capital</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5"><span class="inline-block px-2 py-1 bg-green-900/20 text-green-400 border border-green-900/40 rounded text-[10px] font-bold tracking-wide uppercase">Supply Chain & Mobility VC</span></div>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow font-light">Supply chain & mobility focus. Early backers of <strong>Celcius</strong> (cold chain logistics) and <strong>Oorja</strong> (battery analytics).</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Supply Chain</span>
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Logistics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rohit Goyal (Windrose Capital) -->
+                    <div class="reveal-element delay-300">
+                        <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                            <a href="https://in.linkedin.com/in/rohit-goyal" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-blue-400 transition-colors absolute top-6 right-6">
+                                <i data-lucide="linkedin" class="w-6 h-6 stroke-[1.5]"></i>
+                            </a>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex gap-4 items-center pr-12">
+                                    <div class="w-16 h-16 rounded-full overflow-hidden border border-zinc-700 group-hover:border-zinc-500 transition-colors shrink-0">
+                                        <img src="https://media.licdn.com/dms/image/v2/C5103AQEhVfCBsR6hDA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1548763457076?e=1766016000&v=beta&t=sqCXuOtwmvTGrJYcjQYrjxrXaYlzM6o0amubpC1pCQE" alt="Rohit Goyal" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-lg leading-tight">Rohit<br>Goyal</h4>
+                                        <p class="text-zinc-500 text-xs mt-1 font-medium leading-tight">Managing Partner,<br>Windrose Capital</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5"><span class="inline-block px-2 py-1 bg-green-900/20 text-green-400 border border-green-900/40 rounded text-[10px] font-bold tracking-wide uppercase">~$36M Fund Corpus</span></div>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow font-light">Digital-first VC. Notable exits include <strong>IdeaForge</strong> (drone tech IPO) and investments in <strong>Nymble</strong> (robotics).</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Manufacturing</span>
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Digital First</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Karishma Gajaria (Green Frontier Capital) -->
+                    <div class="reveal-element delay-400">
+                         <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                            <a href="https://in.linkedin.com/in/kgajaria" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-blue-400 transition-colors absolute top-6 right-6">
+                                <i data-lucide="linkedin" class="w-6 h-6 stroke-[1.5]"></i>
+                            </a>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex gap-4 items-center pr-12">
+                                    <div class="w-16 h-16 rounded-full overflow-hidden border border-zinc-700 group-hover:border-zinc-500 transition-colors shrink-0">
+                                        <img src="https://images.squarespace-cdn.com/content/v1/62c84cd51c48897fadfc573f/1723071472029-0B337M47FIQK2JIKTJCL/image-asset.jpeg?format=2500w" alt="Karishma Gajaria" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-lg leading-tight">Karishma<br>Gajaria</h4>
+                                        <p class="text-zinc-500 text-xs mt-1 font-medium leading-tight">Partner,<br>Green Frontier</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5"><span class="inline-block px-2 py-1 bg-green-900/20 text-green-400 border border-green-900/40 rounded text-[10px] font-bold tracking-wide uppercase">~$100M Target Fund</span></div>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow font-light">Climate-tech specialist. Early investors in <strong>BluSmart</strong> (ride-hailing), <strong>Battery Smart</strong>, and <strong>ElectricPe</strong>.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Renewables</span>
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Climate Tech</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Subbu Viswanathan (SiriusOne) -->
+                    <div class="reveal-element delay-400">
+                         <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                            <a href="https://ae.linkedin.com/in/subbu-viswanathan" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-blue-400 transition-colors absolute top-6 right-6">
+                                <i data-lucide="linkedin" class="w-6 h-6 stroke-[1.5]"></i>
+                            </a>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex gap-4 items-center pr-12">
+                                    <div class="w-16 h-16 rounded-full overflow-hidden border border-zinc-700 group-hover:border-zinc-500 transition-colors shrink-0">
+                                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEyd-P3YdN_fw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1684912140614?e=1766016000&v=beta&t=wxVRAZAXjgNb10SG86ddODHWXrRAFN4URuHL0OwCgqI" alt="Subbu V." class="w-full h-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-lg leading-tight">Subbu<br>Viswanathan</h4>
+                                        <p class="text-zinc-500 text-xs mt-1 font-medium leading-tight">ex-Co-Founder,<br>SiriusOne VC</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5"><span class="inline-block px-2 py-1 bg-green-900/20 text-green-400 border border-green-900/40 rounded text-[10px] font-bold tracking-wide uppercase">Enterprise Tech Fund</span></div>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow font-light">Enterprise scale focus. Investments include <strong>Oorja Energy</strong> (battery management) and <strong>Praan</strong> (air purification).</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Enterprise</span>
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Ecosystem</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 2: GLOBAL SCALE ARCHITECTS -->
+            <div class="mb-24">
+                <div class="reveal-element">
+                    <div class="mb-8 pb-4 border-b border-white/10">
+                        <h3 class="text-2xl font-bold text-white">Global Scale Architects</h3>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Deepanshu Kansal -->
+                    <div class="reveal-element delay-0">
+                        <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                            <a href="https://in.linkedin.com/in/deepanshu-kansal" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-blue-400 transition-colors absolute top-6 right-6">
+                                <i data-lucide="linkedin" class="w-6 h-6 stroke-[1.5]"></i>
+                            </a>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex gap-4 items-center pr-12">
+                                    <div class="w-16 h-16 rounded-full overflow-hidden border border-zinc-700 group-hover:border-zinc-500 transition-colors shrink-0">
+                                        <img src="https://media.licdn.com/dms/image/v2/D5603AQHllV0oqmlF-Q/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1710175414117?e=1766016000&v=beta&t=7w8Av9sEQBKtK9w_GL0bn83nvJ_4v-fE32g_Nt6O1cM" alt="Deepanshu Kansal" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-lg leading-tight">Deepanshu<br>Kansal</h4>
+                                        <p class="text-zinc-500 text-xs mt-1 font-medium leading-tight">Zomato</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5"><span class="inline-block px-2 py-1 bg-green-900/20 text-green-400 border border-green-900/40 rounded text-[10px] font-bold tracking-wide uppercase">~$23B Market Cap</span></div>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow font-light">Spearheading Zomato's <strong>EV100</strong> mandate. Strategic partnerships with <strong>Zypp Electric</strong> and <strong>Sun Mobility</strong> to electrify fleets.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Fleet Scale</span>
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">EV100</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Victoryia Hydzik -->
+                    <div class="reveal-element delay-100">
+                        <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                            <a href="https://www.linkedin.com/in/victoryia-hydzik-cpa-mba-74a06214" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-blue-400 transition-colors absolute top-6 right-6">
+                                <i data-lucide="linkedin" class="w-6 h-6 stroke-[1.5]"></i>
+                            </a>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex gap-4 items-center pr-12">
+                                    <div class="w-16 h-16 rounded-full overflow-hidden border border-zinc-700 group-hover:border-zinc-500 transition-colors shrink-0">
+                                        <img src="https://media.licdn.com/dms/image/v2/C4E03AQFfZJUIBaMgIw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1583540332097?e=1766016000&v=beta&t=UbU2k3OQHzzMRYDisJfJjghSQDWt8hM1c5U8fBe0JUo" alt="Victoryia Hydzik" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-lg leading-tight">Victoryia<br>Hydzik</h4>
+                                        <p class="text-zinc-500 text-xs mt-1 font-medium leading-tight">Zero Motorcycles<br>(USA)</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-5">
+                                <span class="inline-block px-2 py-1 bg-green-900/20 text-green-400 border border-green-900/40 rounded text-[10px] font-bold tracking-wide uppercase">$500M+ Funding Raised</span>
+                            </div>
+
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow font-light">
+                                Global e-motorcycle leader. Strategic manufacturing partnership with <strong>Hero MotoCorp</strong> to co-develop premium EV platforms.
+                            </p>
+                            
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">OEM</span>
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Manufacturing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Roberto Rocha -->
+                    <div class="reveal-element delay-200">
+                        <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                            <a href="https://mx.linkedin.com/in/rocharoberto" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-blue-400 transition-colors absolute top-6 right-6">
+                                <i data-lucide="linkedin" class="w-6 h-6 stroke-[1.5]"></i>
+                            </a>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex gap-4 items-center pr-12">
+                                    <div class="w-16 h-16 rounded-full overflow-hidden border border-zinc-700 group-hover:border-zinc-500 transition-colors shrink-0">
+                                        <img src="https://media.licdn.com/dms/image/v2/D4E03AQFSWlav8DBGMQ/profile-displayphoto-scale_400_400/B4EZjj2m6aGYAg-/0/1756169401687?e=1766016000&v=beta&t=XpALZLHNkORBSRE3M8AVXI9jnCVNw1muD7dEt6mFZJ4" alt="Roberto Rocha" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-lg leading-tight">Roberto<br>Rocha</h4>
+                                        <p class="text-zinc-500 text-xs mt-1 font-medium leading-tight">Co-Founder & CEO,<br>VEMO</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-5">
+                                <span class="inline-block px-2 py-1 bg-green-900/20 text-green-400 border border-green-900/40 rounded text-[10px] font-bold tracking-wide uppercase">$314M+ Capital Raised</span>
+                            </div>
+
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow font-light">
+                                LATAM's clean mobility giant. Strategic alliance with <strong>Uber</strong> to deploy 25,000 EVs across Mexico and Colombia.
+                            </p>
+
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">LATAM</span>
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Infrastructure</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 3: INDIA INNOVATION ECOSYSTEM -->
+            <div>
+                <div class="reveal-element">
+                    <div class="flex items-center gap-4 mb-8 border-b border-white/10 pb-4">
+                        <h3 class="text-2xl font-bold text-white">India Innovation Ecosystem</h3>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    
+                    <!-- Kunal Gupta -->
+                    <div class="reveal-element delay-0">
+                         <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                            <a href="https://in.linkedin.com/in/kunal-gupta01" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-blue-400 transition-colors absolute top-6 right-6">
+                                <i data-lucide="linkedin" class="w-6 h-6 stroke-[1.5]"></i>
+                            </a>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex gap-4 items-center pr-12">
+                                    <div class="w-16 h-16 rounded-full overflow-hidden border border-zinc-700 group-hover:border-zinc-500 transition-colors shrink-0">
+                                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGapSt7eBvk1g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1712214926953?e=1766016000&v=beta&t=e-yL4QbfcQiJ_CbbW7B4J0Frz9KLBDeOoz9rIVsRVE0" alt="Kunal Gupta" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-lg leading-tight">Kunal<br>Gupta</h4>
+                                        <p class="text-zinc-500 text-xs mt-1 font-medium leading-tight">Co-Founder & CEO,<br>EMotorad</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5"><span class="inline-block px-2 py-1 bg-green-900/20 text-green-400 border border-green-900/40 rounded text-[10px] font-bold tracking-wide uppercase">$20M+ Series B</span></div>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow font-light">Backed by <strong>Panthera Growth</strong>. Dominating e-bike exports to <strong>Japan, Europe & Australia</strong> with 60% market share.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Exports</span>
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">D2C</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Daniel Esaw -->
+                    <div class="reveal-element delay-100">
+                        <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                            <a href="https://in.linkedin.com/in/daniel-esaw-58389a188" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-blue-400 transition-colors absolute top-6 right-6">
+                                <i data-lucide="linkedin" class="w-6 h-6 stroke-[1.5]"></i>
+                            </a>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex gap-4 items-center pr-12">
+                                    <div class="w-16 h-16 rounded-full overflow-hidden border border-zinc-700 group-hover:border-zinc-500 transition-colors shrink-0">
+                                        <img src="https://media.licdn.com/dms/image/v2/C5603AQGpVhpXvpZOtQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1560766648979?e=1766016000&v=beta&t=k2Mig7mB_NoCpBSSEf_EkFGFUaIIhEI5DreZMsd7OYg" alt="Daniel Esaw" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-lg leading-tight">Daniel<br>Esaw</h4>
+                                        <p class="text-zinc-500 text-xs mt-1 font-medium leading-tight">CTO, BGauss</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5"><span class="inline-block px-2 py-1 bg-green-900/20 text-green-400 border border-green-900/40 rounded text-[10px] font-bold tracking-wide uppercase">$1.2B+ Group Revenue</span></div>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow font-light">EV vertical of <strong>RR Global</strong>. Leveraging 35 years of engineering to deploy the <strong>RUV350</strong> and <strong>C12i</strong> platforms.</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Engineering</span>
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Scale</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Anju Gupta -->
+                    <div class="reveal-element delay-200">
+                         <div class="group relative bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col">
+                            <a href="https://www.linkedin.com/in/anjuivycap/" target="_blank" rel="noopener noreferrer" class="text-zinc-600 hover:text-blue-400 transition-colors absolute top-6 right-6">
+                                <i data-lucide="linkedin" class="w-6 h-6 stroke-[1.5]"></i>
+                            </a>
+                            <div class="flex justify-between items-start mb-4">
+                                <div class="flex gap-4 items-center pr-12">
+                                    <div class="w-16 h-16 rounded-full overflow-hidden border border-zinc-700 group-hover:border-zinc-500 transition-colors shrink-0">
+                                        <img src="https://media.licdn.com/dms/image/v2/C5103AQFhlHY6Nw6kbA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1516320664010?e=1766016000&v=beta&t=eLGeDwcRrNEYgh_bHOG5poUIE7eVIVBKcUIZ4c3aJCg" alt="Anju Gupta" class="w-full h-full object-cover" />
+                                    </div>
+                                    <div>
+                                        <h4 class="text-white font-bold text-lg leading-tight">Anju<br>Gupta</h4>
+                                        <p class="text-zinc-500 text-xs mt-1 font-medium leading-tight">IvyCamp, IvyCap<br>Ventures</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-5"><span class="inline-block px-2 py-1 bg-green-900/20 text-green-400 border border-green-900/40 rounded text-[10px] font-bold tracking-wide uppercase">$600M+ AUM</span></div>
+                            <p class="text-zinc-400 text-sm leading-relaxed mb-6 flex-grow font-light">IIT-Alumni fund ecosystem. Portfolio includes <strong>Euler Motors</strong> (EV commercial vehicles) and <strong>Miko</strong> (robotics).</p>
+                            <div class="flex flex-wrap gap-2 mt-auto">
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Innovation</span>
+                                <span class="text-[10px] uppercase tracking-wider px-2 py-1 bg-zinc-950 border border-zinc-800 rounded text-zinc-500 group-hover:text-zinc-300 transition-colors">Ecosystem</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- And Many More -->
+                    <div class="reveal-element delay-300">
+                        <div class="group relative bg-zinc-900/50 border border-zinc-800 border-dashed rounded-2xl p-6 hover:border-zinc-600 transition-all duration-300 hover:-translate-y-1 h-full flex flex-col items-center justify-center text-center">
+                            <div class="w-16 h-16 rounded-full bg-zinc-800/50 flex items-center justify-center mb-4 group-hover:bg-green-500/20 group-hover:text-green-400 transition-colors">
+                                <i data-lucide="globe" class="w-8 h-8 text-zinc-500 group-hover:text-green-400"></i>
+                            </div>
+                            <h4 class="text-white font-bold text-lg mb-2">...and many more</h4>
+                            <p class="text-zinc-500 text-sm font-light">Across the world</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <footer class="py-24 bg-black border-t border-white/10 text-center relative overflow-hidden">
+        <div class="container mx-auto px-6 relative z-10 flex justify-between items-center">
+             <div class="text-left flex items-center gap-3">
+                <img src="https://framerusercontent.com/images/ETPGt55zejeZ8H4qrHRuhKy61Q.jpeg?width=200&height=200" alt="Vaomi.ai Logo" class="w-10 h-10 rounded-full">
+                <a href="https://vaomi.ai/" class="text-2xl font-bold text-white hover:text-green-400 transition-colors">Vaomi<span class="text-green-400">.</span>ai</a>
+             </div>
+             <div class="text-right text-zinc-500 text-sm">
+                © 2025 Vaomi. All rights reserved
+             </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('bg-black/90', 'backdrop-blur-xl', 'border-b', 'border-white/10', 'py-4');
+                navbar.classList.remove('bg-transparent', 'py-6');
+            } else {
+                navbar.classList.remove('bg-black/90', 'backdrop-blur-xl', 'border-b', 'border-white/10', 'py-4');
+                navbar.classList.add('bg-transparent', 'py-6');
+            }
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('.scroll-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const targetId = e.target.getAttribute('data-scroll-to');
+                const element = document.getElementById(targetId);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Reveal on Scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal-element').forEach((el) => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
